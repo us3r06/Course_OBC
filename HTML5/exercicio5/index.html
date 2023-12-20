@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Inscrição</title>
+  </head>
+  <body>
+    <form>
+      <h1>Formulário de Inscrição</h1>
+      <br />
+      <label for="name">Nome:</label>
+      <br />
+      <input type="text" id="name" name="name" required />
+      <br /><br />
+      <label for="email">Email:</label>
+      <br />
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+      <label for="telefone">WhatsApp:</label>
+      <br />
+      <input type="tel" id="telefone" name="telefone" required />
+      <br /><br />
+      <label>Aréa de Atuação:</label>
+      <br />
+      <input
+        type="radio"
+        id="desenvolvimento"
+        name="area"
+        value="desenvolvimento"
+      />
+      <label for="desenvolvimento">Desenvolvimento</label>
+      <input
+        type="radio"
+        id="qualityassurance"
+        name="area"
+        value="qualityassurance"
+      />
+      <label for="qualityassurance">Quality Assurance (QA)</label>
+      <input
+        type="radio"
+        id="analisededados"
+        name="area"
+        value="analisededados"
+      />
+      <label for="analisededados">Análise de Dados</label>
+      <input
+        type="radio"
+        id="infraestrutura"
+        name="area"
+        value="infraestrutura"
+      />
+      <label for="infraestrutura">Infraestrutura</label>
+      <br /><br />
+      <label for="observacoes">Observações:</label>
+      <br />
+      <textarea
+        name="observacoes"
+        id="observacoes"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br /><br />
+      <input
+        type="checkbox"
+        name="desejoreceber"
+        id="desejoreceber"
+        value="sim"
+      />
+      <label for="desejoreceber"
+        >Desejo Receber novidades e ofertas por email!</label
+      ><br /><br />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

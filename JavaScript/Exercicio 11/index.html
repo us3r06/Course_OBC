@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sistema de escalação:</title>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h1>Bem-vindo</h1>
+        <br />
+        <h1>Sistema de Escalação time de futebol</h1>
+      </header>
+      <main>
+        <br />
+        <br />
+        <form class="formulario">
+          <ul>
+            <li>
+              <label for="name">Nome do Jogador</label>
+              <input type="text" , name="name" , id="name" />
+            </li>
+            <br />
+            <li>
+              <label for="position">Posição do Jogador</label>
+              <input type="text" , name="position" , id="position" />
+            </li>
+            <br />
+            <li>
+              <label for="number">Numero do Jogador</label>
+              <input type="text" , name="number" , id="number" />
+            </li>
+            <br />
+          </ul>
+        </form>
+        <button class="button" onclick="escalation()">Escalar</button>
+        <br />
+
+        <br />
+        <hr />
+        <br />
+        <h2>Time Escalado</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Posição</th>
+              <th>Número</th>
+            </tr>
+          </thead>
+          <tbody id="escalated"></tbody>
+        </table>
+        <hr />
+        <br />
+        <h2>Remover um jogador</h2>
+        <br />
+        <label for="numberToRemove">Numero do Jogador a ser removido</label>
+        <input type="text" , name="numberToRemove" , id="numberToRemove" />
+        <br />
+        <br />
+        <button class="button" onclick="removePlayer()">Remover Jogador</button>
+        <br />
+        <br />
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+* {
+  font-family: sans-serif;
+}
+#dev {
+  width: 80%;
+  flex: auto;
+  border: 0.2rem solid #757575;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+}
+#name {
+  margin: 1rem;
+}
+#submit {
+  margin: 2rem;
+}
+input {
+  margin: 0.4rem;
+  padding: 0.2rem;
+}
+
+#salvar {
+  margin: 2rem;
+  padding: 1rem;
+  width: 20%;
+  flex: auto;
+}
