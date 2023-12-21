@@ -19,8 +19,8 @@ const positions = [
 ];
 
 function init() {
-  const player1 = document.getElementById("player1").value;
-  const player2 = document.getElementById("player2").value;
+  const player1 = document.getElementById("player1").value || "Jogador 1";
+  const player2 = document.getElementById("player2").value || "Jogador 2";
   selected = [];
   let playerAtual = "";
 
@@ -50,9 +50,9 @@ function newMove(ev) {
   selected[index] = player;
   player = player === "X" ? "O" : "X";
   if (player === "X") {
-    globalPlayer = document.getElementById("player1").value;
+    globalPlayer = document.getElementById("player1").value || "Jogador 1";
   } else {
-    globalPlayer = document.getElementById("player2").value;
+    globalPlayer = document.getElementById("player2").value || "Jogador 2";
   }
   const playerVez = "Jogador da vez: " + player + " :" + globalPlayer;
   currentPlayer.innerText = playerVez;
@@ -79,9 +79,9 @@ function checkWin() {
       });
 
       if (playerLastMove === "X") {
-        playerWin = document.getElementById("player1").value;
+        playerWin = document.getElementById("player1").value || "Jogador 1";
       } else {
-        playerWin = document.getElementById("player2").value;
+        playerWin = document.getElementById("player2").value || "Jogador 2";
       }
 
       // Aguarda um pouco antes de exibir o alert
