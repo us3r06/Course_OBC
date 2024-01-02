@@ -23,6 +23,14 @@ a {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-background));
 }
+.switch_theme > button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
 .hero__background {
   object-fit: cover;
   position: absolute;
