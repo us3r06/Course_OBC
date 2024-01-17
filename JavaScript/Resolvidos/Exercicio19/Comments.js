@@ -1,7 +1,7 @@
 class Comments {
   constructor() {
-    this.content = "";
-    this.date = new Date();
+    this.content = ''
+    this.date = new Date()
   }
 }
-module.exports = { Comments };
+module.exports = { Comments }

@@ -1,3 +1,7 @@
 {
-  "workbench.settings.openDefaultKeybindings": false
+ "editor.codeActionsOnSave": {
+  "source.fixAll.eslint": "explicit",
+  "source.addMissingImports": "explicit"
+}, 
+ "eslint.validate":["javascript","javascriptnode"]
 }
