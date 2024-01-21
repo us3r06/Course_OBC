@@ -10,8 +10,7 @@ export class Warrior extends Caracter {
 
   attack(caracter) {
     if (this.defensePosition === false) {
-      caracter.lifePoints -=
-        this.attackPoints - caracter.defensePoints + this.magicPoints
+      caracter.lifePoints -= this.attackPoints - caracter.defensePoints
     } else {
       console.log(`${this.name} está em modo de defesa`)
     }
@@ -20,8 +19,10 @@ export class Warrior extends Caracter {
   switchPosition() {
     if (this.defensePosition === false) {
       this.defensePosition = true
+      this.defensePoints += this.shildPoints
     } else {
       this.defensePosition = false
+      this.defensePoints -= this.shildPoints
     }
   }
 }
